@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Leonardo Rosa Bittencourt</title>
+	<script language="JavaScript">
+	function validar2() {
+		var nome2=form2.nome2.value, nasc2=form2.nasc2.value, email2=form2.email2.value, fone2=form2.fone2.value, senha2=form2.senha2.value, coment2=form2.coment2.value, acesso2=form2.acesso2.value, qtd2=form2.qtd2.value;
+		if (nome2 == "") {
+			alert("Campo ''Nome'' não preenchido!");
+			form2.nome2.focus();
+			return(false);
+		}
+		if (nasc2 == "") {
+			alert("Campo ''Data de nascimento'' não preenchido!");
+			form2.nasc2.focus();
+			return(false);
+		}
+		if (email2 == "") {
+			alert("Campo ''Email'' não preenchido!");
+			form2.email2.focus();
+			return(false);
+		}
+		if (fone2 == "") {
+			alert("Campo ''Celular'' não preenchido!");
+			form2.fone2.focus();
+			return(false);
+		}
+		if (fone2.length != 14){
+			alert("Celular inválido!");
+			form2.fone2.focus();
+			return(false);
+		}
+		if (senha2 == "") {
+			alert("Campo ''Senha'' não preenchido!");
+			form2.senha2.focus();
+			return(false);
+		}
+		if (senha2.length < 8) {
+			alert("A senha precisa ter no minimo 8 caracteres!");
+			form2.senha2.focus();
+			return(false);
+		}
+		if (coment2 == "") {
+			alert("Campo ''Descrição do(s) ítem(ns)'' não preenchido!");
+			form2.coment2.focus();
+			return(false);
+		}
+		if (acesso2 == "") {
+			alert("Campo ''Informe o dia e horário deste cadastro'' não preenchido!");
+			form2.acesso2.focus();
+			return(false);
+		}
+		if (qtd2 == "") {
+			alert("Campo ''Quantas categorias de esporte a motor você acompanha com frequência?'' não preenchido!");
+			form2.qtd2.focus();
+			return(false);
+		}
+		else{
+			alert("Cadastro concluído com sucesso!");
+			return(true);
+		}
+	}
+	</script>
+	<link type="text/css" rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js.js"></script>
+</head>
+<body>
+	<nav>
+    <ul id="links-principais">
+    	<li class="lista-principal"><a href="index.html" class="menu">HOME</a></li>
+    	<li class="lista-principal"><a href="itens.html" class="menu">ITENS PARA DOAÇÃO</a></li>
+    	<li class="lista-principal">
+    		<a href="javascript://" class="menuint">CADASTROS <img src="setamenu.png" width="14"></a>
+    		<ul class="lista-secundaria">
+    			<li><a href="quest1.html" class="menu">Doação de ítens</a></li>
+    			<li><a href="quest2.html" class="menu">Recebimento de doações</a></li>
+    		</ul>
+    	</li>
+    </ul>
+    </nav>	
+	<img class="i1" src="capaq2.png">
+	<h1>Formulário de recebimento de doações:</h1>
+	<br><br><p>
+	<form name="form2">
+	Nome completo: <input type="text" name="nome2" size="50"><br><br>
+	Data de nascimento: <input type="date" id="nasc2" name="nasc"><br><br>
+	Email: <input type="email" id="email2" name="email2"><br><br>
+	Celular: <input type="tel" id="fone2" name="fone2" pattern= "[0-9]{2}-[0-9]{3}-[0-9]{3}-[0-9]{3}"><br><br>	
+	Senha:<input type="password" size="17" name="senha2" maxlength="20"></input><br><br>
+	Marque o(s) ítem(ns) que tem interesse:<br>
+	<input type="checkbox" name="c21">DVD<br>
+	<input type="checkbox" name="c22">VHS<br>
+	<input type="checkbox" name="c23">CD<br>
+	<input type="checkbox" name="c24">Livro<br>
+	<input type="checkbox" name="c25">Revista<br>
+	<input type="checkbox" name="c26">Miniatura<br>
+	<input type="checkbox" name="c27">Outro: <textarea name="outro2" rows="1" cols="30" placeholder="Informe..."></textarea><br><br>
+	Em caso de miniaturas ou semelhantes, tem preferência por alguma cor? Se sim, especifique (opcional): <br>
+	<input type="radio" name="r1" checked>Não
+	<input type="radio" name="r2">Sim<input type="color" id="favcor" name="favcolor" value="#ffffff"><br><br>
+	Por qual motivo você procura doações?<br><textarea name="coment2" rows="7" cols="70" placeholder="Digite..."></textarea><br><br>
+	Informe o dia e horário deste cadastro: <input type="datetime-local" id="acesso2" name="acesso2"><br><br>
+	Deseja receber sugestões de ítens disponíveis para doação por email (conforme seus interesses cadastrados)? 
+	<input type="radio" name="r21" checked>Sim
+	<input type="radio" name="r22">Não<br><br>
+	Caso tenha interesse em algum ítem específico, informe o código do mesmo para reservarmos para você (opcional): <textarea name="cod" rows="1" cols="10"></textarea><br><br>
+	Entre estas categorias de esporte a motor, qual é a sua favorita?
+	<select>
+		<option value="nulo"></option>
+		<option value="op21">DTM</option>
+		<option value="op22">Fórmula 1</option>
+		<option value="op23">Fórmula 2</option>
+		<option value="op24">Fórmula 3</option>
+		<option value="op25">Fórmula E</option>
+		<option value="op26">Fórmula Indy</option>
+		<option value="op27">MotoGP</option>
+		<option value="op28">Mundial de Endurance (WEC)</option>
+		<option value="op29">Nascar</option>
+		<option value="op210">Stock Car Brasil</option>
+	</select><br><br>
+	Quantas categorias de esporte a motor você acompanha com frequência? <input type="number" id="qtd2" name="qtd2" min="0" max="10"><br>
+	<br><br><input type="reset" value="Limpar campos"><input type="button" name="botao" value="Concluir cadastro" onclick="validar2()"><br><br>
+	<a href="index.html">Voltar ao portal</a>
+	</form></p>
+</body>
+</html>

@@ -1,0 +1,1 @@
+Executar arquivo index.html para iniciar o portal.

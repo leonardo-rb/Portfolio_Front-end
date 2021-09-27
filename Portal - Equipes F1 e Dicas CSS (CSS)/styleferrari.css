@@ -1,0 +1,69 @@
+body {
+  background-image: url(f1.png); 
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-position: top right;
+  background-color: #B22222;
+}
+
+h1 {
+	color: white;
+	text-indent: 350px;
+	text-shadow: 1pt 3pt #008000;
+	font-family: georgia;
+	font-style: italic;
+}
+
+p {
+	text-align: justify;
+	color: white;
+}
+
+h2 {
+	font-family: verdana;
+	color: #008000;
+	text-shadow: 1pt 1pt white;
+	letter-spacing: 4px;
+}
+
+th {
+	color: white;
+	font-family: verdana;
+	border-color:  #FFD700;
+	border-style: ridge;
+}
+
+ul{
+	color: white;
+	font-family: verdana;
+	list-style-image: url(l1.png);
+}
+
+ol {
+	color: white;
+	font-family: verdana;
+	font-size: 30px;
+	list-style-type: hebrew;
+}
+
+h3 {
+	color: #FFD700;
+	font-family: georgia;
+	font-style: italic;
+	text-indent: 100px;
+	border-style: groove;
+	border-color: black;
+	border-width: 10px;
+	font-size: 20px;
+	letter-spacing: 4px;
+}
+
+a:link {
+ color: white;
+ font-family: verdana;
+}
+
+a:hover {
+ color: #008000;
+ font-family: verdana;
+}

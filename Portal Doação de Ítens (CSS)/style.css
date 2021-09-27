@@ -1,0 +1,105 @@
+img.i1{
+	width: 100%;
+	height: 360px;
+}
+
+img.i2{
+	width: 300px;
+	height: 450px;
+}
+
+img.i3{
+	width: 400px;
+	height: 300px;
+}
+
+img.i4{
+	width: 310px;
+	height: 360px;
+}
+
+video{
+	width: 525px;
+	height: 300px;
+}
+
+
+figure{
+	width: 50%; 
+	text-align: center; 
+	font-style: italic; 
+	font-size: 15pt; 
+	text-indent: 0; 
+	border: thin silver solid; 
+	margin: 0.5em; 
+	padding: 0.5em;
+}
+
+body {
+  background-color: #FFDEAD;
+}
+
+h1 {
+	color: #FF4500;
+	text-shadow: 2pt 1pt black;
+	font-family: calibri;
+	font-style: italic;
+	text-align: center;
+	letter-spacing: 3px;
+	font-size: 31pt;
+}
+
+p {
+	text-align: justify;
+	color: #000080;
+	font-family: calibri;
+	font-size: 15pt;
+}
+
+input{
+	color: #FF4500;
+	font-family: calibri;
+	font-size: 15pt;
+}
+
+h2 {
+	font-family: calibri;
+	text-decoration: overline;
+	color: #B22222;
+	text-shadow: 1pt 1pt #FF4500;
+	font-size: 22pt;
+
+}
+
+ul{
+	color: #8B0000;
+	list-style-type: circle;
+	letter-spacing: 1px;
+	font-style: bold;
+}
+
+
+th {
+	color: #FF4500;
+	font-family: calibri;
+	border-color: #000080;
+	border-style: ridge;
+	font-size: 14pt;
+}
+
+a:link {
+ text-decoration: none;
+ color: #000080;
+ font-family: calibri;
+ font-style: bold;
+ font-size: 17pt;
+}
+
+a:hover {
+ color: #B22222;
+ font-family: calibri;
+ font-style: bold;
+ font-size: 17pt;
+}
+
+

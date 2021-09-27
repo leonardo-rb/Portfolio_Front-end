@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Leonardo Rosa Bittencourt</title>
+	<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+	<img class="i1" src="capaq2.png">
+	<h1>Formulário de recebimento de doações:</h1>
+	<br><br><p>
+	Nome completo: <textarea name="name" rows="1" cols="30"></textarea><br><br>
+	Data de nascimento: <input type="date" id="nasc" name="nasc"><br><br>
+	Email: <input type="email" id="email" name="email"><br><br>
+	Celular: <input type="tel" id="fone" name="fone" pattern= "[0-9]{2}-[0-9]{3}-[0-9]{3}-[0-9]{3}"><br><br>	
+	Senha:<input type="password" size="17" name="Senha" maxlength="8"></input><br><br>
+	Marque o(s) ítem(ns) que tem interesse:<br>
+	<input type="checkbox" name="piloto1">DVD<br>
+	<input type="checkbox" name="piloto2">VHS<br>
+	<input type="checkbox" name="piloto3">CD<br>
+	<input type="checkbox" name="piloto4">Livro<br>
+	<input type="checkbox" name="piloto5">Revista<br>
+	<input type="checkbox" name="piloto6">Miniatura<br>
+	<input type="checkbox" name="piloto7">Outro: <textarea name="outro" rows="1" cols="30" placeholder="Informe..."></textarea><br><br>
+	Em caso de miniaturas ou semelhantes, tem preferência por alguma cor? Se sim, especifique: <br>
+	<input type="radio" name="r1" checked>Não
+	<input type="radio" name="r2">Sim<input type="color" id="favcor" name="favcolor" value="#ffffff"><br><br>
+	Por qual motivo você procura doações?<br><textarea name="coment" rows="7" cols="70" placeholder="Digite..."></textarea><br><br>
+	Informe o dia e horário deste cadastro: <input type="datetime-local" id="acesso" name="acesso"><br><br>
+	Deseja receber sugestões de ítens disponíveis para doação por email (conforme seus interesses cadastrados? 
+	<input type="radio" name="r1" checked>Sim
+	<input type="radio" name="r2">Não<br><br>
+	Caso tenha interesse em algum ítem específico, informe o código do mesmo para reservarmos para você: <textarea name="cod" rows="1" cols="10"></textarea><br><br>
+	Entre estas categorias de esporte a motor, qual é a sua favorita?
+	<select>
+		<option value="nulo"></option>
+		<option value="op1">DTM</option>
+		<option value="op2">Fórmula 1</option>
+		<option value="op3">Fórmula 2</option>
+		<option value="op4">Fórmula 3</option>
+		<option value="op5">Fórmula E</option>
+		<option value="op6">Fórmula Indy</option>
+		<option value="op7">MotoGP</option>
+		<option value="op8">Mundial de Endurance (WEC)</option>
+		<option value="op9">Nascar</option>
+		<option value="op10">Stock Car Brasil</option>
+	</select><br><br>
+	Quantas categorias de esporte a motor você acompanha com frequência? <input type="number" id="dias" name="dias" min="0" max="10"><br>
+	<br><br><input type="reset" value="Limpar campos"><input type="submit" value="Concluir cadastro"><br><br>
+	<a href="index.html">Voltar ao portal</a>
+	</p>
+</body>
+</html>

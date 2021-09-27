@@ -1,0 +1,52 @@
+body {
+  background-color: #FF8C00;
+}
+
+h1 {
+	color: #00008B;
+	text-shadow: 1pt 3pt white;
+	text-align: center;
+	vertical-align: top;
+	text-transform: uppercase;
+	font-family: tahoma;
+}
+
+h2 {
+	font-family: tahoma;
+	color: #B0E0E6;
+	text-decoration: overline;
+	letter-spacing: 20pt;
+	white-space: pre;
+}
+
+h3 {
+	font-family: tahoma;
+	color: #8B0000;
+	word-spacing: 20pt;
+	direction: ltr;
+	text-indent: 100pt;
+}
+
+p {
+	font-family: tahoma;
+	text-align: justify;
+	font-weight: 700;
+	font-style: oblique;
+	color: black;
+}
+
+ul{
+	color: #B0E0E6;
+	font-family: tahoma;
+	list-style-type: circle;
+}
+
+a:link {
+ color: white;
+ font-family: verdana;
+}
+
+a:hover {
+ color: #00008B;
+ font-family: verdana;
+}
